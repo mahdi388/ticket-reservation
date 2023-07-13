@@ -1,0 +1,12 @@
+.stage{
+    width: 70%;
+    padding: 20px 0;
+    background-color: #aaa;
+    margin-left: 15%;
+    text-align: center;
+    color: #444;
+    border-radius: 5px;
+    border: 1px solid #777;
+    font-size: 20px;
+    box-shadow: -1px 1px #000;
+}
