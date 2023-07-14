@@ -10,3 +10,50 @@
     font-size: 20px;
     box-shadow: -1px 1px #000;
 }
+.front-chairs{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    gap: 20px;
+    height: 300px;
+}
+.front-chairs>div{
+    border: 1px solid #aaa;
+    display: flex;
+    border-radius: 2px;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    justify-content: center;
+    border-radius: 5px;
+}
+.a{
+    max-width: 402px;
+}
+.b,.c{
+    max-width: 270px;
+}
+.chair{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #777;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+.back-chairs{
+    display: flex;
+    justify-content: center;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 0;
+    justify-content: center;
+    border-radius: 5px;
+    width: 610px;
+    margin-left: calc(50% - 305px);
+    margin-bottom: 20px;
+}
