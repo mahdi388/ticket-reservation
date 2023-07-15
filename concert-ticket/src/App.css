@@ -42,6 +42,7 @@
     background-color: #777;
     border-radius: 3px;
     border: 1px solid black;
+    user-select: none;
 }
 .back-chairs{
     display: flex;
@@ -56,4 +57,28 @@
     width: 610px;
     margin-left: calc(50% - 305px);
     margin-bottom: 20px;
+}
+.unselected{
+    background-color: #777;;
+}
+.selected{
+    background-color: #00b949;
+}
+.ready{
+    background-color: #fb6;
+}
+.reserve{
+    background-color: #f33;
+}
+.count-sum{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 200px;
+}
+.count-sum>div{
+    padding: 10px 30px;
+    background: #ddd;
+    border: 1px solid #aaa;
+    border-radius: 4px;
 }
