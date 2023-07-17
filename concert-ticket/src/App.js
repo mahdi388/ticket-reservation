@@ -1,12 +1,15 @@
 import {useEffect,useReducer,createContext,useState} from 'react'
 import './App.css'
 import Chair from './components/Chair'
+import gif from './guide.gif'
+import img from './guide.jpg'
 
 export const dispatchContext=createContext()
 export const hoverContext=createContext()
 
 function App() {
   const [hover,setHover]=useState(false)
+  const [guide,setGuide]=useState(false)
   const [count,setCount]=useState(0)
   const [sum,setSum]=useState(0)
   const reducer=(state,{type,data})=>{
@@ -59,6 +62,7 @@ function App() {
   },[])
 
   return <>
+    <span onClick={()=>setGuide(true)}>reservation guide</span>
     <div className="stage">
       stage
     </div>
@@ -105,6 +109,18 @@ function App() {
         </div>
       </hoverContext.Provider>
     </dispatchContext.Provider>
+    <div className={`guide ${!guide && 'hidden'}`}>
+      <div className="close">
+        <i className="fa fa-close" onClick={()=>setGuide(false)}></i>
+      </div>
+      <div>How to select and reserve:</div>
+      <img src={gif} className='gif'/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <img src={img}/>
+    </div>
   </>;
 }
 
